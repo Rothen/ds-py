@@ -3,7 +3,7 @@ from typing import Final
 
 from hidapi_py import HidDeviceInfo, HidDevice
 
-from .backend import DeviceInfo
+from ..backend import DeviceInfo
 from .in_report import (
     InReport,
     Usb01InReport,
@@ -13,7 +13,7 @@ from .in_report import (
     InvalidInReportLengthException,
 )
 from .out_report import OutReport, Usb01OutReport, Bt01OutReport, Bt31OutReport
-from ..mapping import (
+from ...mapping import (
     uint8_value_mapping,
     uint8_bit_to_bool,
     create_battery,
